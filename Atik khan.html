@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atikh khan - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e3a8a 0%, #0ea5e9 100%);
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .skill-bar {
+            height: 6px;
+            border-radius: 3px;
+        }
+        .timeline-item::before {
+            content: "";
+            position: absolute;
+            left: -18px;
+            top: 0;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #1e3a8a;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-blue-900">AK</div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="text-blue-900 hover:text-blue-700 font-medium">Home</a>
+                <a href="#projects" class="text-gray-600 hover:text-blue-700 font-medium">Work Experience</a>
+                <a href="#skills" class="text-gray-600 hover:text-blue-700 font-medium">Skills</a>
+                <a href="#cirtifications" class="text-gray-600 hover:text-blue-700 font-medium">Cirtifications</a>
+                <a href="#contact" class="text-gray-600 hover:text-blue-700 font-medium">Contact</a>
+            </div>
+            <button class="md:hidden text-gray-600">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <!-- <section id="home" class="hero-gradient pt-32 pb-20 text-white">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">PATHAN ATIKH KHAN</h1>
+                <h2 class="text-2xl md:text-3xl font-medium mb-6">Professional Civil Engineer</h2>
+                <p class="mb-8 text-blue-100 max-w-lg">Matoshree collage of Engineering Nanded Btech. (Civil engineering) </p>
+                <div class="flex space-x-4">
+                    <a href="#projects" class="bg-white text-blue-800 px-6 py-3 rounded-lg font-medium hover:bg-blue-50 transition">View Projects</a>
+                    <a href="#contact" class="border border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:bg-opacity-10 transition">Contact Me</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="WhatsApp Image 2025-07-05 at 18.23.23_ed22c5ff.jpg" alt="Atikh khan picture civil engineer" class="rounded-lg shadow-xl" />
+            </div>
+        </div>
+    </section> -->
+
+
+    <section id="home" class="hero-gradient pt-32 pb-20 text-white">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 mb-10 md:mb-0">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">PATHAN ATIK</h1>
+            <h2 class="text-2xl md:text-3xl font-medium mb-6">Professional Civil Engineer</h2>
+            <p class="mb-8 text-blue-100 max-w-lg"> Swami Ramanand Teerth Marathwada University • Nanded. </p>
+            
+            <div class="flex space-x-4">
+                <a href="#projects" class="bg-white text-blue-800 px-6 py-3 rounded-lg font-medium hover:bg-blue-50 transition">View Experience</a>
+                <a href="#contact" class="border border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:bg-opacity-10 transition">Contact Me</a>
+            </div>
+        </div>
+        <div class="md:w-1/2 flex justify-center">
+            <img src="WhatsApp Image 2025-07-05 at 18.23.23_ed22c5ff.jpg" alt="Atikh Khan picture civil engineer" class="rounded-full shadow-xl w-64 h-64 object-cover" />
+        </div>
+    </div>
+</section>
+
+
+    <!-- work experience Section -->
+    <section id="projects" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-blue-900">WORK EXPERIENCE</h2>
+            
+
+
+            <!-- work Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- work experience 1 -->
+                <div class="project-card p-6 rounded-xl bg-gray-50 border border-gray-200 transition-all" data-category="bridges">
+                    <div class="mb-4 overflow-hidden rounded-lg">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/5e4f7781-2bac-413b-813d-3121d269bc13.png" alt="Modern suspension bridge over river with architectural lighting at dusk" class="w-full h-48 object-cover transition-transform hover:scale-105" />
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">BIM Modeller • Internship AndroBim Solution Pvt Ltd • Hyderabad</h3>
+                    <p class="text-gray-600 mb-4">Androbim Solutions Private Limited is a Hyderabad-based company specializing in Building Information Modeling (BIM)
+ training and development services. Established on January 10, 2018, the company is located at Flat No F6, Eureka Court
+ Building, Ameerpet, First Floor, Yellareddy Guda, Hyderabad, Telangana, India.  </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-md text-sm">Structural Design</span>
+                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-md text-sm">BIM MODELLER</span>
+                        <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-md text-sm">Project Management</span>
+                    </div>
+                </div>
+
+
+                
+
+           
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-blue-900">SKILLS</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Skill Card 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                            <i class="fas fa-drafting-compass text-blue-800 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">BIM Software Proficiency</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4"> AutoCAD, Bentley  Systems  tools, Civil  3D, MicroStation, Navisworks, Revit, Tekla Structures.</p>
+                </div>
+
+                <!-- Skill Card 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                            <i class="fas fa-tools text-blue-800 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold"> 3D Modeling & Visualization</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4"> 3D Modeling & Visualization.</p>
+                   
+                </div>
+
+                <!-- Skill Card 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                            <i class="fas fa-project-diagram text-blue-800 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">Detailing and Drafting</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Construction  drawings, Detailing, Elevations, Plans, Sections.</p>
+                    
+                </div>
+
+                <!-- Skill Card 4 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                            <i class="fas fa-water text-blue-800 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">Data Management & Coordination</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4"> Data  management, Discipline  coordination, Project  data  coordination.</p>
+                  
+                </div>
+
+                <!-- Skill Card 5 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                            <i class="fas fa-leaf text-blue-800 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold"> Soft Skills</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Adaptability, Attention  to  detail, Communication, Problem- solving, Team  collaboration, Time  management</p>
+                   
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- cirtificates Section -->
+    <section id="cirtifications" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-blue-900">Cirtifications</h2>
+            
+            <div class="max-w-3xl mx-auto">
+                <!-- Timeline Item 1 -->
+                <div class="relative pl-10 pb-10 timeline-item">
+                    <div class="bg-gray-50 p-6 rounded-xl border-l-4 border-blue-800">
+                        <div class="flex flex-col md:flex-row justify-between mb-2">
+                            <h3 class="text-xl font-bold">Autodesk Revit Architecture/Structure</h3>
+                            <span class="text-blue-800 font-medium"> 07/2024 - Present</span>
+                        </div>
+                        <h4 class="text-gray-600 font-medium mb-3">Androbim Solution Pvt Ltd</h4>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="relative pl-10 pb-10 timeline-item">
+                    <div class="bg-gray-50 p-6 rounded-xl border-l-4 border-blue-800">
+                        <div class="flex flex-col md:flex-row justify-between mb-2">
+                            <h3 class="text-xl font-bold">Autodesk Autocad</h3>
+                            <span class="text-blue-800 font-medium"> 07/2024 - Present</span>
+                        </div>
+                        <h4 class="text-gray-600 font-medium mb-3">Androbim Solution Pvt Ltd </h4>
+                      
+                    </div>
+                </div>
+
+                <!-- Timeline Item 3 -->
+                <div class="relative pl-10 timeline-item">
+                    <div class="bg-gray-50 p-6 rounded-xl border-l-4 border-blue-800">
+                        <div class="flex flex-col md:flex-row justify-between mb-2">
+                            <h3 class="text-xl font-bold">BIM 360</h3>
+                            <span class="text-blue-800 font-medium">07/2024 - Present</span>
+                        </div>
+                        <h4 class="text-gray-600 font-medium mb-3">Androbim Solution Pvt Ltd</h4>
+                       
+                    </div>
+                </div>
+
+                <!-- Timeline Item 4 -->
+                <div class="relative pl-10 pb-10 timeline-item">
+                     <div class="bg-gray-50 p-6 rounded-xl border-l-4 border-blue-800">
+                        <div class="flex flex-col md:flex-row justify-between mb-2">
+                           <h3 class="text-xl font-bold"> Enscape</h3>
+                          <span class="text-blue-800 font-medium">07/2024 - Present</span>
+                        </div>
+                        <h4 class="text-gray-600 font-medium mb-3">Androbim Solution Pvt Ltd</h4>
+                    </div>
+                </div>
+
+    <!-- Timeline Item 5 -->
+    <div class="relative pl-10 pb-10 timeline-item">
+        <div class="bg-gray-50 p-6 rounded-xl border-l-4 border-blue-800">
+            <div class="flex flex-col md:flex-row justify-between mb-2">
+                <h3 class="text-xl font-bold">Navisworks</h3>
+                <span class="text-blue-800 font-medium">07/2024 - Present</span>
+            </div>
+            <h4 class="text-gray-600 font-medium mb-3">Androbim Solution Pvt Ltd</h4>
+        </div>
+    </div>
+
+    <!-- Timeline Item 6 -->
+    <div class="relative pl-10 timeline-item">
+        <div class="bg-gray-50 p-6 rounded-xl border-l-4 border-blue-800">
+            <div class="flex flex-col md:flex-row justify-between mb-2">
+                <h3 class="text-xl font-bold"> Primavera P6</h3>
+                <span class="text-blue-800 font-medium">07/2024 - Present</span>
+            </div>
+            <h4 class="text-gray-600 font-medium mb-3">Androbim Solution Pvt Ltd</h4>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+    </section>
+
+    <!--Contact Section-->
+
+    <section id="contact" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12 text-blue-900">Get In Touch</h2>
+        
+        <div class="max-w-4xl mx-auto">
+            <h3 class="text-xl font-bold mb-4 text-center">Contact Information</h3>
+            <p class="text-gray-600 mb-6 text-center">For project inquiries or professional opportunities, please reach out through any of these channels.</p>
+            
+            <div class="space-y-4">
+                <div class="flex items-start justify-center">
+                    <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                        <i class="fas fa-envelope text-blue-800"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-medium">Email</h4>
+                        <p class="text-gray-600">atikpathan5566@gmail.com</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start justify-center">
+                    <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                        <i class="fas fa-phone text-blue-800"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-medium">Phone</h4>
+                        <p class="text-gray-600">(+91) 7219408500</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start justify-center">
+                    <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                        <i class="fas fa-map-marker-alt text-blue-800"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-medium">Office</h4>
+                        <p class="text-gray-600">Mehdipatnam, Hyderabad</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-2xl font-bold mb-2">Atik Khan Pathan</h3>
+                    <p class="text-blue-100">Professional Civil Engineer</p>
+                </div>
+                
+                <div class="text-center md:text-right">
+                    <p class="text-blue-100">Web-Dev Contact</p>
+                    <p class="text-blue-100">vasikhanplm123@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Project Filtering Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.project-filter');
+            const projectCards = document.querySelectorAll('.project-card');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => {
+                        btn.classList.remove('bg-blue-800', 'text-white');
+                        btn.classList.add('bg-gray-200', 'hover:bg-blue-100');
+                    });
+                    
+                    // Add active class to clicked button
+                    this.classList.remove('bg-gray-200', 'hover:bg-blue-100');
+                    this.classList.add('bg-blue-800', 'text-white');
+                    
+                    const filterValue = this.getAttribute('data-filter');
+                    
+                    projectCards.forEach(card => {
+                        if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
